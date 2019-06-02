@@ -1,0 +1,8 @@
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\bin\Debug\netcoreapp2.1\FruitConsole.deps.json
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\bin\Debug\netcoreapp2.1\FruitConsole.runtimeconfig.json
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\bin\Debug\netcoreapp2.1\FruitConsole.runtimeconfig.dev.json
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\bin\Debug\netcoreapp2.1\FruitConsole.dll
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.csprojAssemblyReference.cache
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.csproj.CoreCompileInputs.cache
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.AssemblyInfoInputs.cache
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.AssemblyInfo.cs

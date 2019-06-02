@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitConsole", "Griffless\FruitConsole.csproj", "{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instructions", "{AFA764FD-527B-4D59-87C1-8531E1C275E3}"
+	ProjectSection(SolutionItems) = preProject
+		01_CreateConsoleApp.md = 01_CreateConsoleApp.md
+		02_CreateDataLake.md = 02_CreateDataLake.md
+		03_CreateEventHub.md = 03_CreateEventHub.md
+		04_AddEventhubToApp.md = 04_AddEventhubToApp.md
+		05_CreateStreamToLake.md = 05_CreateStreamToLake.md
+		06_CreateStreamToPowerBI.md = 06_CreateStreamToPowerBI.md
+		07_CreateStreamToAzureDB.md = 07_CreateStreamToAzureDB.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042AB4-4207-40C3-B886-2B5F4FAE6BD5}"
+	ProjectSection(SolutionItems) = preProject
+		FruitAddEventhub.PNG = FruitAddEventhub.PNG
+		FruitAddEventhubDetail.PNG = FruitAddEventhubDetail.PNG
+		FruitAddEventhubSAS.PNG = FruitAddEventhubSAS.PNG
+		FruitConsole.PNG = FruitConsole.PNG
+		FruitDataLake.PNG = FruitDataLake.PNG
+		FruitDataLakeARMDeploy.PNG = FruitDataLakeARMDeploy.PNG
+		FruitDataLakeDetail.PNG = FruitDataLakeDetail.PNG
+		FruitEventHubARMDeploy.PNG = FruitEventHubARMDeploy.PNG
+		FruitEventhubMessages.PNG = FruitEventhubMessages.PNG
+		FruitEventhubNamespaceDetail.PNG = FruitEventhubNamespaceDetail.PNG
+		FruitResourceGroup.PNG = FruitResourceGroup.PNG
+		FruitResourceGroupDetail.PNG = FruitResourceGroupDetail.PNG
+	EndProjectSection
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "FruitARM", "FruitARM\FruitARM.deployproj", "{432227E7-E292-4279-A711-035213AC08EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98470DB2-105C-46FD-A74B-88CCEB4995BC}"
+	ProjectSection(SolutionItems) = preProject
+		..\ReadMe.md = ..\ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432227E7-E292-4279-A711-035213AC08EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432227E7-E292-4279-A711-035213AC08EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432227E7-E292-4279-A711-035213AC08EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432227E7-E292-4279-A711-035213AC08EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92042AB4-4207-40C3-B886-2B5F4FAE6BD5} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C6D9CE4-B494-4A61-B428-B95173772619}
+	EndGlobalSection
+EndGlobal

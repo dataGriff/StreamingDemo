@@ -1,0 +1,77 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+
+    "eventhubnamespace": {
+      "defaultValue": "fruitehubns",
+      "type": "string"
+    },
+    "eventhub": {
+      "defaultValue": "fruitehub",
+      "type": "string"
+    },
+    "eventhubsharedaccesspolicy": {
+      "defaultValue": "fruitsas",
+      "type": "string"
+    },
+    "eventhublocation": {
+      "type": "string",
+      "allowedValues": [
+        "North Europe",
+        "West Europe"
+      ],
+      "defaultValue": "West Europe",
+      "metadata": {
+        "description": "The location in which the resources will be created."
+      }
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.EventHub/namespaces",
+      "sku": {
+        "name": "Basic",
+        "tier": "Basic",
+        "capacity": 1
+      },
+      "name": "[parameters('eventhubnamespace')]",
+      "apiVersion": "2017-04-01",
+      "location": "[parameters('eventhublocation')]",
+      "resources": [
+        {
+          "type": "Microsoft.EventHub/namespaces/eventhubs",
+          "name": "[concat(parameters('eventhubnamespace'), '/', parameters('eventhub'))]",
+          "apiVersion": "2017-04-01",
+          "location": "[parameters('eventhublocation')]",
+          "properties": {
+            "messageRetentionInDays": 1,
+            "partitionCount": 2,
+            "status": "Active"
+          },
+          "dependsOn": [
+            "[resourceId('Microsoft.EventHub/namespaces', parameters('eventhubnamespace'))]"
+          ],
+          "resources": [
+            {
+              "type": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules",
+              "name": "[concat(parameters('eventhubnamespace'), '/', parameters('eventhub'), '/', parameters('eventhubsharedaccesspolicy'))]",
+              "apiVersion": "2017-04-01",
+              "location": "[parameters('eventhublocation')]",
+              "properties": {
+                "rights": [
+                  "Send"
+                ]
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.EventHub/namespaces', parameters('eventhubnamespace'))]",
+                "[resourceId('Microsoft.EventHub/namespaces/eventhubs', parameters('eventhubnamespace'), parameters('eventhub'))]"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

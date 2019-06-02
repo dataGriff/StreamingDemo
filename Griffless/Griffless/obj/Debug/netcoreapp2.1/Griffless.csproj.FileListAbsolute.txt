@@ -1,0 +1,11 @@
+E:\Documents\Projects\Griffless\Griffless\Griffless\bin\Debug\netcoreapp2.1\Griffless.deps.json
+E:\Documents\Projects\Griffless\Griffless\Griffless\bin\Debug\netcoreapp2.1\Griffless.runtimeconfig.json
+E:\Documents\Projects\Griffless\Griffless\Griffless\bin\Debug\netcoreapp2.1\Griffless.runtimeconfig.dev.json
+E:\Documents\Projects\Griffless\Griffless\Griffless\bin\Debug\netcoreapp2.1\Griffless.dll
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.csprojAssemblyReference.cache
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.csproj.CoreCompileInputs.cache
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.AssemblyInfoInputs.cache
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.AssemblyInfo.cs
+E:\Documents\Projects\Griffless\Griffless\Griffless\bin\Debug\netcoreapp2.1\Griffless.pdb
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.dll
+E:\Documents\Projects\Griffless\Griffless\Griffless\obj\Debug\netcoreapp2.1\Griffless.pdb

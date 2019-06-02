@@ -1,0 +1,40 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dataLakeStorageName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Data Lake Store account to create."
+      }
+    },
+    "dataLakeStorageLocation": {
+      "type": "string",
+      "allowedValues": [
+        "North Europe",
+        "West Europe"
+      ],
+      "defaultValue": "West Europe",
+      "metadata": {
+        "description": "The location in which the resources will be created."
+      }
+    }
+  },
+  "variables": {
+    "dataLakeStorageApiVersion": "2016-11-01"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.DataLakeStore/accounts",
+      "name": "[parameters('dataLakeStorageName')]",
+      "apiVersion": "[variables('dataLakeStorageApiVersion')]",
+      "location": "[parameters('dataLakeStorageLocation')]"
+    }
+  ],
+  "outputs": {
+    "adlStoreAccount": {
+      "type": "object",
+      "value": "[reference(resourceId('Microsoft.DataLakeStore/accounts',parameters('dataLakeStorageName')))]"
+    }
+  }
+}
