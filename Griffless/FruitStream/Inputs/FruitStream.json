@@ -1,0 +1,29 @@
+﻿{
+  "Sample": "{\"colour\":\"Red\",\"name\":\"Strawberry\",\"price\":75}",
+  "EventHubProperties": {
+    "ConsumerGroupName": null,
+    "EventHubName": "fruitehub",
+    "ServiceBusNamespace": "fruitehubns",
+    "SharedAccessPolicyKey": null,
+    "SharedAccessPolicyName": "RootManageSharedAccessKey"
+  },
+  "BlobStorageProperties": null,
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": null,
+  "SqlReferenceInputInfo": null,
+  "DataSourceCredentialDomain": "c74a253f-7385-448a-b8b6-06e7a6123935.StreamAnalyticsCredential",
+  "Name": "FruitStream",
+  "Type": "Data Stream",
+  "DataSourceType": "Event Hub",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null,
+    "SerializationDllPath": null,
+    "SerializationClassName": null,
+    "SerializationDllPathInLocal": null
+  },
+  "CompresssionType": "None",
+  "ScriptType": "Input"
+}
