@@ -55,3 +55,30 @@ FROM
 ![Fruit Stream Data In Lake](FruitStreamDataInLake.PNG)
 
 ## Create with Stream Analytics Project
+
+1. In Visual Studio, add a new Azure Stream Analytics Application project to your solution called FruitStream.
+
+![VS New Fruit Stream Project](VSNewFruitStreamProject.PNG)
+
+2. Add an input callled FruitStream with the configuration below.
+
+![VS Fruit Stream Input](VSNewFruitStreamInput.PNG)
+
+3. Add an output called FruitLake with the configuration below.
+
+![VS Fruit Stream Output Lake](VSNewFruitStreamOutputLake.PNG)
+
+4. Publish to Azure with the configuration below, you should then find your stream analytics job in Azure. 
+
+![VS Fruit Stream Pub](VSFruitStreamPub.PNG)
+
+![VS Fruit Stream Deploy](VSFruitStreamDeploy.PNG)
+
+5. Start your console app.
+
+6. Start your stream analytics job (may take a few minutes to start).
+![Fruit Stream Start](FruitStreamStart.PNG)
+
+7. After a few minutes you should start seeing activity in the messages and also data will go in to your data lake in the location you specified. 
+
+![Fruit Stream Data In Lake](FruitStreamDataInLake.PNG)
