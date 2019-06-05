@@ -1,1 +1,2 @@
 E:\Documents\Projects\Griffless\Griffless\FruitARM\obj\Debug\FruitARM.deployproj.CoreCompileInputs.cache
+E:\Documents\Projects\StreamingDemo\Griffless\FruitARM\obj\Debug\FruitARM.deployproj.CoreCompileInputs.cache
