@@ -24,12 +24,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042A
 		FruitConsole.PNG = FruitConsole.PNG
 		FruitDataLake.PNG = FruitDataLake.PNG
 		FruitDataLakeARMDeploy.PNG = FruitDataLakeARMDeploy.PNG
+		FruitDataLakeDataExample.PNG = FruitDataLakeDataExample.PNG
 		FruitDataLakeDetail.PNG = FruitDataLakeDetail.PNG
 		FruitEventHubARMDeploy.PNG = FruitEventHubARMDeploy.PNG
 		FruitEventhubMessages.PNG = FruitEventhubMessages.PNG
 		FruitEventhubNamespaceDetail.PNG = FruitEventhubNamespaceDetail.PNG
 		FruitResourceGroup.PNG = FruitResourceGroup.PNG
 		FruitResourceGroupDetail.PNG = FruitResourceGroupDetail.PNG
+		FruitStreamAddInput.PNG = FruitStreamAddInput.PNG
+		FruitStreamAddInputDetail.PNG = FruitStreamAddInputDetail.PNG
+		FruitStreamAddOutputLake.PNG = FruitStreamAddOutputLake.PNG
+		FruitStreamAddOutputLakeDetail.PNG = FruitStreamAddOutputLakeDetail.PNG
+		FruitStreamAddOutputLakeTest.PNG = FruitStreamAddOutputLakeTest.PNG
+		FruitStreamAnalytic.PNG = FruitStreamAnalytic.PNG
+		FruitStreamAnalyticDetail.PNG = FruitStreamAnalyticDetail.PNG
+		FruitStreamDataInLake.PNG = FruitStreamDataInLake.PNG
+		FruitStreamQueryLake.PNG = FruitStreamQueryLake.PNG
+		FruitStreamStart.PNG = FruitStreamStart.PNG
+		VSFruitStreamDeployPNG.PNG = VSFruitStreamDeployPNG.PNG
+		VSNewFruitStreamInput.PNG = VSNewFruitStreamInput.PNG
+		VSNewFruitStreamOutputLake.PNG = VSNewFruitStreamOutputLake.PNG
+		VSNewFruitStreamProject.PNG = VSNewFruitStreamProject.PNG
 	EndProjectSection
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "FruitARM", "FruitARM\FruitARM.deployproj", "{432227E7-E292-4279-A711-035213AC08EA}"
