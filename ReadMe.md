@@ -16,6 +16,7 @@ This will be a console application in C# that just loops and generates a number 
 * [Azure](https://portal.azure.com) Account - [Free Azure Trial](https://azure.microsoft.com/en-gb/free/search/?&OCID=AID719823_SEM_VNyprj9x&lnkd=Google_Azure_Brand&dclid=CjgKEAjw583nBRC33OzE0aaQvEoSJAAVMMJIS9V5KT7PZgtP2F7cgqJ6CObTA6VmZJ6_580FqRxOf_D_BwE)
 * [Power BI](https://app.powerbi.com/home) Account - [Sign Up Here](https://powerbi.microsoft.com/en-us/landing/signin/)
 * [Visual Studio Installed](https://visualstudio.microsoft.com/downloads/)
+* [Visual Studio Azure Data Lake and Stream Analytics](https://marketplace.visualstudio.com/items?itemName=ADLTools.AzureDataLakeandStreamAnalyticsTools)
 
 ### Useful Links
 
