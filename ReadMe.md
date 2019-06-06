@@ -8,8 +8,10 @@ This will be a console application in C# that just loops and generates a number 
 1. [Create Event Hub](Griffless/03_CreateEventHub.md)
 1. [Add Event Hub To App](Griffless/04_AddEventhubToApp.md)
 1. [Create Stream To Lake](Griffless/05_CreateStreamToLake.md)
-1. [Create Stream To Power BI](Griffless/06_CreateStreamToPowerBI.md)   
-1. [Create Stream To Azure SQL DB](Griffless/07_CreateStreamToAzureDB.md)   
+1. [Create Stream To Power BI](Griffless/06_StreamQueryCaseStatement.md)   
+1. [Create Stream To Azure SQL DB](Griffless/07_CreateStreamToPowerBI.md)   
+1. [Create Stream To Azure SQL DB](Griffless/08_CreateAzureSQLDB.md)   
+1. [Create Stream To Azure SQL DB](Griffless/09_CreateStreamToAzureSQLDB.md)   
 
 ### Pre-Requisites
 

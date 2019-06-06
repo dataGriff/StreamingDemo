@@ -12,12 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instruction
 		03_CreateEventHub.md = 03_CreateEventHub.md
 		04_AddEventhubToApp.md = 04_AddEventhubToApp.md
 		05_CreateStreamToLake.md = 05_CreateStreamToLake.md
-		06_CreateStreamToPowerBI.md = 06_CreateStreamToPowerBI.md
-		07_CreateStreamToAzureDB.md = 07_CreateStreamToAzureDB.md
+		06_StreamQueryCaseStatement.md = 06_StreamQueryCaseStatement.md
+		07_CreateStreamToPowerBI.md = 07_CreateStreamToPowerBI.md
+		08_CreateAzureSQLDB.md = 08_CreateAzureSQLDB.md
+		09_CreateStreamToAzureSQLDB.md = 09_CreateStreamToAzureSQLDB.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042AB4-4207-40C3-B886-2B5F4FAE6BD5}"
 	ProjectSection(SolutionItems) = preProject
+		DataLakeFruitEatenByMonkeys.PNG = DataLakeFruitEatenByMonkeys.PNG
 		FruitAddEventhub.PNG = FruitAddEventhub.PNG
 		FruitAddEventhubDetail.PNG = FruitAddEventhubDetail.PNG
 		FruitAddEventhubSAS.PNG = FruitAddEventhubSAS.PNG
@@ -38,6 +41,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042A
 		FruitStreamAddOutputLakeTest.PNG = FruitStreamAddOutputLakeTest.PNG
 		FruitStreamAnalytic.PNG = FruitStreamAnalytic.PNG
 		FruitStreamAnalyticDetail.PNG = FruitStreamAnalyticDetail.PNG
+		FruitStreamCaseQuery.PNG = FruitStreamCaseQuery.PNG
 		FruitStreamDataInLake.PNG = FruitStreamDataInLake.PNG
 		FruitStreamQueryLake.PNG = FruitStreamQueryLake.PNG
 		FruitStreamStart.PNG = FruitStreamStart.PNG
@@ -46,6 +50,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042A
 		VSNewFruitStreamInput.PNG = VSNewFruitStreamInput.PNG
 		VSNewFruitStreamOutputLake.PNG = VSNewFruitStreamOutputLake.PNG
 		VSNewFruitStreamProject.PNG = VSNewFruitStreamProject.PNG
+		VSStreamCaseQuery.PNG = VSStreamCaseQuery.PNG
 	EndProjectSection
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "FruitARM", "FruitARM\FruitARM.deployproj", "{432227E7-E292-4279-A711-035213AC08EA}"

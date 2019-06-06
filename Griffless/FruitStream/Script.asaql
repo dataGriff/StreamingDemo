@@ -1,5 +1,6 @@
 ﻿SELECT
-    *
+    *, CASE WHEN name = 'Banana' THEN 'Yes'
+    ELSE 'No' END AS FruitEatenByMonkeys
 INTO
     [fruitlake]
 FROM
