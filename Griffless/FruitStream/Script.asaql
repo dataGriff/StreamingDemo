@@ -16,3 +16,10 @@ FROM
 GROUP BY 
     [name],
     SlidingWindow(second,10)
+
+SELECT 
+    [name], [colour], [price]
+INTO 
+    [FruitDB]
+FROM
+    [fruitstream]
