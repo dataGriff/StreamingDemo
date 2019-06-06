@@ -5,3 +5,14 @@ INTO
     [fruitlake]
 FROM
     [fruitstream]
+
+SELECT
+    [name] AS FruitName
+    ,COUNT(*) AS FruitCount
+INTO
+    [fruitreport]
+FROM
+    [fruitstream]
+GROUP BY 
+    [name],
+    SlidingWindow(second,10)
