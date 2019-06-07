@@ -1,7 +1,7 @@
 # Overview - Streaming Data Workshop
 
 We are going to create an application that submits a colour and receives back a fruit. 
-This will be a console application in C# that just loops and generates a number of fruit events until we cancel the application. These fruit events will generate a JSON message that we can send to an even hub. Using the event hub and data lake analytics we will stream real time data to a data lake, a real time dataset in Power BI and also an Azure SQL DB. 
+This will be a console application in C# that just loops and generates a number of fruit events until we cancel the application. These fruit events will generate a JSON message that we can send to an event hub. Using the event hub and azure stream analytics we will stream real time data to a data lake, a real time dataset in Power BI and also an Azure SQL DB. 
 
 1. [Create Fruit Console App](Griffless/01_CreateConsoleApp.md)
 1. [Create Data Lake](Griffless/02_CreateDataLake.md)
