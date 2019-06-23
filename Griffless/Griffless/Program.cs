@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Microsoft.Azure.EventHubs;
 using System.Text;
+using FruitConsole;
+using System.Net;
 
 namespace Griffless
 {
@@ -12,25 +14,50 @@ namespace Griffless
 
         static void Main(string[] args)
         {
+            string connehub = "Endpoint=sb://fruitehubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6blCigv+9cN5/1yg2RDUr96WbjBmMoWYuF5sPijaUPo=";
+
             while (1 == 1)
                 {
-                string a = GetRandomColour();
-                Fruit fruit = new Fruit(a);
-                var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
-                WaitRandom();
-                Console.WriteLine(message);
-                string connehub = "Endpoint=sb://fruitehubns.servicebus.windows.net/;SharedAccessKeyName=fruitsas;SharedAccessKey=i0DRGLkbSIo7OkJRtLSGuOsPv6kiui7RbXcr6ERZUoY=;EntityPath=fruitehub";
-                string ehubname = "fruitehub";
-                   EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();
+                try
+                {
+                    string a = GetRandomColour(true);
+                    Fruit fruit = new Fruit(a);
+                    var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
+                    WaitRandom();
+                    Console.WriteLine(message);
+                    string ehubname = "fruitehub";
+                    EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();
+                }
+                catch (Exception e)
+                {
+                    var error = JsonConvert.SerializeObject(e);
+                    Console.WriteLine(error);
+                    string ehubname = "errorehub";
+                    EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
+                }
             }
         }
 
-        public static string GetRandomColour()
+        public static string GetRandomColour(bool errorEnabled)
         {
-            Array values = Enum.GetValues(typeof(Colour.Name));
+            if (errorEnabled)
+            {
+                ThrowRandomError();
+            }
+                Array values = Enum.GetValues(typeof(Colour.Name));
+                Random random = new Random();
+                Colour.Name randomColour = (Colour.Name)values.GetValue(random.Next(values.Length));
+                return randomColour.ToString();
+        }
+
+        public static void ThrowRandomError()
+        {
             Random random = new Random();
-            Colour.Name randomColour = (Colour.Name)values.GetValue(random.Next(values.Length));
-            return randomColour.ToString() ;
+            int randomNum = random.Next(0, 10);
+            if(randomNum ==1)
+            {
+                throw new System.ArgumentException("This is a random error!", "RandomError");
+            }
         }
 
         public static void WaitRandom()
@@ -40,7 +67,6 @@ namespace Griffless
             System.Threading.Thread.Sleep(randomWait);
         }
 
-        
         private static async Task EventHubWrapper(string connectionString, string hubName, string message)
         {
          

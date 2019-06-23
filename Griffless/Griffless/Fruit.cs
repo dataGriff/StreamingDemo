@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FruitConsole;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,14 @@ namespace Griffless
 
         public int price { get; private set; }
 
+        public Message message { get; private set; }
+
         public Fruit(string colour)
 
         {
             this.colour = colour;
             GetFruitNameAndPrice();
+            message = new Message();
         }
 
         public void GetFruitNameAndPrice ()

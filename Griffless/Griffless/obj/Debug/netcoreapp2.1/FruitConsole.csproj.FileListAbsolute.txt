@@ -8,3 +8,4 @@ E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\
 E:\Documents\Projects\StreamingDemo\Griffless\Griffless\bin\Debug\netcoreapp2.1\FruitConsole.pdb
 E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.dll
 E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.pdb
+E:\Documents\Projects\StreamingDemo\Griffless\Griffless\obj\Debug\netcoreapp2.1\FruitConsole.csprojAssemblyReference.cache
