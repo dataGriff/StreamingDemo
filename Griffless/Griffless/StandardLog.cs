@@ -6,8 +6,13 @@ using System.Net.NetworkInformation;
 
 namespace FruitConsole
 {
-    public class Message
+    public class StandardLog
     {
+        public enum LogCode
+        {
+            Failure = 0,
+            Success = 1
+        }
 
         public string userName { get; private set; }
 
@@ -19,13 +24,16 @@ namespace FruitConsole
 
         public string localIP { get; private set; }
 
-        public Message()
+        public LogCode logCode { get; private set; }
+
+        public StandardLog(LogCode logCode)
         {
           this.userName = Environment.UserName;
           this.dtUtc = DateTime.UtcNow;
           this.dt = DateTime.Now;
           this.hostName = Dns.GetHostName();
           this.localIP = Dns.GetHostEntry(hostName).AddressList.GetValue(0).ToString();
+          this.logCode = logCode;
         }
     }
 }

@@ -15,14 +15,14 @@ namespace Griffless
 
         public int price { get; private set; }
 
-        public Message message { get; private set; }
+        public StandardLog standardLog { get; private set; }
 
         public Fruit(string colour)
 
         {
             this.colour = colour;
             GetFruitNameAndPrice();
-            message = new Message();
+            standardLog = new StandardLog(StandardLog.LogCode.Success);
         }
 
         public void GetFruitNameAndPrice ()

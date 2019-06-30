@@ -26,9 +26,9 @@ namespace Griffless
                     WaitRandom();
                     Console.WriteLine(message);
                     string ehubname = "fruitehub";
-                    EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();
+                    EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();  
                 }
-                catch (Exception e)
+                catch (ColourException e)
                 {
                     var error = JsonConvert.SerializeObject(e);
                     Console.WriteLine(error);
@@ -40,23 +40,26 @@ namespace Griffless
 
         public static string GetRandomColour(bool errorEnabled)
         {
+            string randomColour;
+            Array values = Enum.GetValues(typeof(Colour.Name));
+            Random random = new Random();
+            Colour.Name colour = (Colour.Name)values.GetValue(random.Next(values.Length));
+            randomColour = colour.ToString();
             if (errorEnabled)
-            {
-                ThrowRandomError();
-            }
-                Array values = Enum.GetValues(typeof(Colour.Name));
-                Random random = new Random();
-                Colour.Name randomColour = (Colour.Name)values.GetValue(random.Next(values.Length));
-                return randomColour.ToString();
+                {
+                    ThrowRandomError(randomColour);
+                }
+            return randomColour;
         }
 
-        public static void ThrowRandomError()
+        public static void ThrowRandomError(string colour)
         {
             Random random = new Random();
             int randomNum = random.Next(0, 10);
-            if(randomNum ==1)
+            if(randomNum == 1)
             {
-                throw new System.ArgumentException("This is a random error!", "RandomError");
+                string message = "This is a random error for the colour " + colour + "!";
+                throw new ColourException(message, colour);
             }
         }
 
@@ -69,7 +72,6 @@ namespace Griffless
 
         private static async Task EventHubWrapper(string connectionString, string hubName, string message)
         {
-         
             var connectionStringBuilder = new EventHubsConnectionStringBuilder(connectionString)    //Install-Package Microsoft.Azure.EventHubs
             {
                 EntityPath = hubName
