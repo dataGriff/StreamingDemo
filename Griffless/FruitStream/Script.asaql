@@ -18,8 +18,32 @@ GROUP BY
     SlidingWindow(second,10)
 
 SELECT 
-    [name], [colour], [price]
+    [fruitstream].[name]
+    , [fruitstream].[colour]
+    , [fruitstream].[price]
+    , [fruitstream].[StandardLog].[userName] AS [FruitUser]
+    , [fruitstream].[StandardLog].[dt] AS [FruitDate]
 INTO 
     [FruitDB]
 FROM
     [fruitstream]
+
+SELECT 
+    *
+INTO 
+    [ErrorLake]
+FROM
+    [ErrorStream]
+
+ SELECT 
+     [ErrorStream].[Source] AS [LogSource]
+    , [ErrorStream].[StandardLog].[LogCode] AS [LogCode]
+    , [ErrorStream].[Message] AS [LogMessage]
+    , [ErrorStream].[StackTrace] AS [LogDetail]
+    , [ErrorStream].[colour] AS [LogColour]
+    , [ErrorStream].[StandardLog].[userName] AS [LogUserName]
+    , [ErrorStream].[StandardLog].[dt] AS [LogDate]
+INTO 
+    [LogDB]
+FROM
+    [ErrorStream]

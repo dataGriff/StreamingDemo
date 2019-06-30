@@ -23,3 +23,4 @@ This will be a console application in C# that just loops and generates a number 
 ### Useful Links
 
 * [ARM File Not Found Fix](https://omgdebugging.com/2017/08/14/adding-azure-arm-template-files-in-visual-studio-correctly/)
+* [Querying JSON in Streaming](https://docs.microsoft.com/en-gb/azure/stream-analytics/stream-analytics-parsing-json)

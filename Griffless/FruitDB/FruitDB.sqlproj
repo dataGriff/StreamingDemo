@@ -65,5 +65,12 @@
   <ItemGroup>
     <Build Include="Security\Schemas\Store.sql" />
     <Build Include="Store\Table\Fruit.sql" />
+    <Build Include="Store\Table\StandardLog.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FruitDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Queries.sql" />
   </ItemGroup>
 </Project>

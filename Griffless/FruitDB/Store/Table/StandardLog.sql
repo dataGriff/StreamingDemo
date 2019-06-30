@@ -1,0 +1,12 @@
+﻿CREATE TABLE [Store].[StandardLog]
+(
+	[StandardLogId]  INT IDENTITY NOT NULL CONSTRAINT [PK_StandardLog] PRIMARY KEY CLUSTERED,
+	[FirstInserted] DATETIME2 NOT NULL CONSTRAINT [DF_StandardLog_FirstInserted] DEFAULT SYSUTCDATETIME(),
+	[LogSource] NVARCHAR(100)  NULL,
+	[LogCode] TINYINT  NULL,
+	[LogMessage] NVARCHAR(100)  NULL,
+	[LogDetail] NVARCHAR(MAX)  NULL,
+	[LogColour] VARCHAR(128)  NULL, 
+    [LogUserName] VARCHAR(128)  NULL, 
+    [LogDate] DATETIME2  NULL
+)
