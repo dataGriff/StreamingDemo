@@ -7,7 +7,7 @@ This will be a console application in C# that just loops and generates a number 
 1. [Add Log and Error Handling](Griffless/Instructions/02_AddLogAndErrorHandling/AddLogAndErrorHandling.md)
 1. [Create Data Lake](Griffless/Instructions/03_CreateDataLake/CreateDataLake.md)
 1. [Create Event Hub](Griffless/Instructions/04_CreateEventHub/CreateEventHub.md)
-1. [Add Event Hub To App](Griffless/Instructions/05_AddEventHubToApp/AddEventHubToApp.md)
+1. [Add Event Hub To App](Griffless/Instructions/05_AddEventHubToApp/AddEventhubToApp.md)
 1. [Create Stream To Lake](Griffless/Instructions/06_CreateStreamToLake/CreateStreamToLake.md)
 1. [Create Stream Case Statement](Griffless/Instructions/07_StreamQueryCaseStatement/StreamQueryCaseStatement.md)   
 1. [Create Stream To Power BI](Griffless/Instructions/08_CreateStreamToPowerBI/CreateStreamToPowerBI.md)   
