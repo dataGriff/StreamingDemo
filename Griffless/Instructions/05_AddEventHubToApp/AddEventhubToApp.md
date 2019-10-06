@@ -45,17 +45,37 @@ using Microsoft.Azure.EventHubs;
         }
 ```
 
-6. After the Console.Writeline(message) piece of code, add the following, which will send the serialized message to the event hub.
-* Get the whole connehub string value from your fruitsas shared access policy of your eventhub, use 
+6. At the start of the Main method, add the following, which will send the serialized message to the event hub.
+* Copy the whole connehub string value from your fruitsend shared access policy of your eventhub, e.g. 
+
+![Fruit Eventhub Messages](Images/SASConnString.PNG)
+
+which when pasted in should look something like the following.
 
 ```c#
-                string connehub = "Endpoint=sb://fruitehub.servicebus.windows.net/;SharedAccessKeyName=fruitsas;SharedAccessKey=XXXXXXXXXXXXXXXXXXXXXXXX;";
-                string ehubname = "fruitehub";
-                   EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();
+        static void Main(string[] args)
+        {
+            string connfruitehub = "Endpoint=sb://grifffruitehubns.servicebus.windows.net/;SharedAccessKeyName=fruitsend;SharedAccessKey=XXXXXXXXXXXXXX;EntityPath=fruitehub";
+            string fruitehubname = "fruitehub";
 ```
 
-7. Run you console app and confirm that the messages are being sent to the console.
+7. You now need to send your message to the event hub by adding the wrapper to the try component of your Main method as per below.
 
-8. While running, navigate to your eventhub and confirm that messages are being received. This may take 2-5 minutes for the Azure Portal graphs to display that it is receiving messages, so be patient :). 
+
+```c#
+                try
+                {
+                    string a = GetRandomColour(true);
+                    Fruit fruit = new Fruit(a);
+                    var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
+                    WaitRandom();
+                    Console.WriteLine(message);
+                    EventHubWrapper(connfruitehub, fruitehubname, message).GetAwaiter().GetResult();  
+                }
+```
+
+8. Run you console app and confirm that the messages are being sent to the console.
+
+9. While running, navigate to your eventhub and confirm that messages are being received. This may take 2-5 minutes for the Azure Portal graphs to display that it is receiving messages, so be patient :). 
 
 ![Fruit Eventhub Messages](Images/FruitEventhubMessages.PNG)

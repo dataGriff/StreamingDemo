@@ -14,7 +14,8 @@ namespace Griffless
 
         static void Main(string[] args)
         {
-            //string connehub = "Endpoint=sb://fruitehubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6blCigv+9cN5/1yg2RDUr96WbjBmMoWYuF5sPijaUPo=";
+            string connfruitehub = "Endpoint=sb://grifffruitehubns.servicebus.windows.net/;SharedAccessKeyName=fruitsend;SharedAccessKey=fFh5+RxebdvKMSk+/bx6suOMCtQQkheEGw+DhWwAIBk=;EntityPath=fruitehub";
+            string fruitehubname = "fruitehub";
 
             while (1 == 1)
                 {
@@ -25,8 +26,7 @@ namespace Griffless
                     var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
                     WaitRandom();
                     Console.WriteLine(message);
-                //    string ehubname = "fruitehub";
-                  //  EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();  
+                    EventHubWrapper(connfruitehub, fruitehubname, message).GetAwaiter().GetResult();  
                 }
                 catch (ColourException e)
                 {
@@ -34,10 +34,9 @@ namespace Griffless
                     var error = JsonConvert.SerializeObject(e);
                     Console.WriteLine(error);
                     Console.ResetColor();
-                    //   string ehubname = "errorehub";
-                    //   EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
+                    //string ehubname = "errorehub";
+                    //EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
                 }
-                Console.ReadKey();
             }
         }
 

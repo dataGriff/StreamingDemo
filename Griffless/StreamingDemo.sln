@@ -151,6 +151,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{3347D399-18C6-4FC3-9E9C-D5C32BBCF3AD}"
 	ProjectSection(SolutionItems) = preProject
 		Instructions\05_AddEventHubToApp\Images\FruitEventhubMessages.PNG = Instructions\05_AddEventHubToApp\Images\FruitEventhubMessages.PNG
+		Instructions\05_AddEventHubToApp\Images\SASConnString.PNG = Instructions\05_AddEventHubToApp\Images\SASConnString.PNG
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{41E2530D-06B0-4C29-910F-A0EE220883EB}"
