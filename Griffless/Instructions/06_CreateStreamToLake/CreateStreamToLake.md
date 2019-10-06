@@ -12,7 +12,7 @@ You might want to create the event hub using the portal the first time you do it
 
 ![Fruit Stream Analytic](Images/FruitStreamAnalytic.PNG)
 
-   ii. Name it fruitstream, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the West Europe region and leave rest as defaults. 
+   ii. Name it fruitstream, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and leave rest as defaults. 
 ![Fruit Stream Analytic Detail](Images/FruitStreamAnalyticDetail.PNG)
 
 2. Navigate to your fruitdemo-rg and you will now see your stream analytic resource. 
@@ -22,7 +22,7 @@ You might want to create the event hub using the portal the first time you do it
 i. Create an input from your eventhub
 ![Fruit Stream Analytic Add Input](Images/FruitStreamAddInput.PNG)
 
-ii.Set the input alias to be fruitstream, use the frtuiehub you created and ensure the format is set to JSON. Set the rest as below.. (Really another SAS token should be setup with read permissions and not use the root key, but we will use this for the demo)*
+ii.Set the input alias to be fruitstream, use the frtuiehub you created and ensure the format is set to JSON. Set the rest as below.. 
 ![Fruit Stream Analytic Add Input Detail](Images/FruitStreamAddInputDetail.PNG)
 
 4. Create an output...
@@ -44,6 +44,10 @@ FROM
     [fruitstream]
 ```
 ![Fruit Stream Query Lake](Images/FruitStreamQueryLake.PNG)
+
+6. Click test and you should see some sample results to prove your query is fine. **Save your query.**
+
+![Azure Test Query](Images/AzureTestQuery.PNG)
 
 6. Start your console app.
 
