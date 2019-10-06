@@ -14,16 +14,16 @@ You might want to create the data lake using the portal the first time you do it
 
 ![Fruit Resource Group](Images/FruitResourceGroup.PNG)
 
-   ii. Name it fruitdemo-rg and created it West Europe region. 
+   ii. Name it fruitdemo-rg and created it North Europe region. 
 
 ![Fruit Resource Group Detail](Images/FruitResourceGroupDetail.PNG)
 
-3. Create a new data lake called fruitdemodtlk.
+3. Create a new data lake called {yourname}fruitdemodtlk. You need to prefix it with something unique (like your name) so that the whole URL of the data lake is unique across Azure. 
   i. Click the green plus and search for data lake. 
 
 ![Fruit Data Lake](Images/FruitDataLake.PNG)
 
-   ii. Name it fruitdemodtlk, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the West Europe region and choose pay as you go. 
+   ii. Name it {yourname}fruitdemodtlk, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and choose pay as you go. 
 ![Fruit Data Lake Detail](Images/FruitDataLakeDetail.PNG)
 
 4. Navigate to your fruitdemo-rg and you will now see your data lake resource. 
@@ -42,10 +42,10 @@ You might want to create the data lake using the portal the first time you do it
   "contentVersion": "1.0.0.0",
   "parameters": {
     "dataLakeStorageName": {
-      "value": "fruitdemodtlk"
+      "value": "grifffruitdemodtlk"
     },
     "dataLakeStorageLocation": {
-      "value": "West Europe"
+      "value": "North Europe"
     }
   }
 }
@@ -72,7 +72,7 @@ You might want to create the data lake using the portal the first time you do it
         "North Europe",
         "West Europe"
       ],
-      "defaultValue": "West Europe",
+      "defaultValue": "North Europe",
       "metadata": {
         "description": "The location in which the resources will be created."
       }

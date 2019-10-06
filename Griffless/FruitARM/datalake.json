@@ -14,7 +14,7 @@
         "North Europe",
         "West Europe"
       ],
-      "defaultValue": "West Europe",
+      "defaultValue": "North Europe",
       "metadata": {
         "description": "The location in which the resources will be created."
       }
