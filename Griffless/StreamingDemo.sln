@@ -95,7 +95,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_CreateEventHub", "04_Cre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_AddEventHubToApp", "05_AddEventHubToApp", "{D5A144C7-F111-4D72-84F9-BE5FD088A1BA}"
 	ProjectSection(SolutionItems) = preProject
-		Instructions\05_AddEventHubToApp\AddEventhubToApp.md = Instructions\05_AddEventHubToApp\AddEventhubToApp.md
+		Instructions\05_AddEventHubToApp\AddEventHubToApp.md = Instructions\05_AddEventHubToApp\AddEventHubToApp.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_CreateStreamToLake", "06_CreateStreamToLake", "{30DE2555-FDD3-446C-8B01-1061EBC11FD7}"
