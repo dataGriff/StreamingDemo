@@ -25,9 +25,13 @@ You might want to create the event hub using the portal the first time you do it
 
 ![Fruit Add Eventhub Detail](Images/FruitAddEventhubDetail.PNG)
 
-5. Go into your newly created eventhub and click shared access policies. Create a new one called fruitsas with Send permissions.
+5. Go into your newly created eventhub and click shared access policies. Create a new one called fruitsend with Send permissions.
 
 ![Fruit Add Eventhub SAS](Images/FruitAddEventhubSAS.PNG)
+
+6. Create another one called fruitlisten with Listen permissions.
+
+![Fruit Add Eventhub SAS](Images/FruitAddEventhubSASListen.PNG)
 
 
 ### Create with ARM Template
@@ -49,8 +53,8 @@ You might want to create the event hub using the portal the first time you do it
     "eventhub": {
       "value": "fruitehub"
     },
-    "eventhubsharedaccesspolicy": {
-      "value": "fruitsas"
+    "eventhubsharedaccesspolicysend": {
+      "value": "fruitsend"
     },
     "eventhublocation": {
       "value": "North Europe"
@@ -75,8 +79,8 @@ You might want to create the event hub using the portal the first time you do it
       "defaultValue": "fruitehub",
       "type": "string"
     },
-    "eventhubsharedaccesspolicy": {
-      "defaultValue": "fruitsas",
+    "eventhubsharedaccesspolicysend": {
+      "defaultValue": "fruitsend",
       "type": "string"
     },
     "eventhublocation": {
@@ -120,12 +124,27 @@ You might want to create the event hub using the portal the first time you do it
           "resources": [
             {
               "type": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules",
-              "name": "[concat(parameters('eventhubnamespace'), '/', parameters('eventhub'), '/', parameters('eventhubsharedaccesspolicy'))]",
+              "name": "[concat(parameters('eventhubnamespace'), '/', parameters('eventhub'), '/', parameters('eventhubsharedaccesspolicysend'))]",
               "apiVersion": "2017-04-01",
               "location": "[parameters('eventhublocation')]",
               "properties": {
                 "rights": [
                   "Send"
+                ]
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.EventHub/namespaces', parameters('eventhubnamespace'))]",
+                "[resourceId('Microsoft.EventHub/namespaces/eventhubs', parameters('eventhubnamespace'), parameters('eventhub'))]"
+              ]
+            },
+{
+              "type": "Microsoft.EventHub/namespaces/eventhubs/authorizationRules",
+              "name": "[concat(parameters('eventhubnamespace'), '/', parameters('eventhub'), '/', parameters('eventhubsharedaccesspolicylisten'))]",
+              "apiVersion": "2017-04-01",
+              "location": "[parameters('eventhublocation')]",
+              "properties": {
+                "rights": [
+                  "Listen"
                 ]
               },
               "dependsOn": [
