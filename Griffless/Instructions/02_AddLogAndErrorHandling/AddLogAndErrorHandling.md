@@ -1,108 +1,139 @@
 ## Create Fruit Console App
 
-1. In Visual Studio, create a new C# console application called "FruitConsole".
 
-2. Create two class files in your project, Colour.cs and Fruit.cs.
+1. In your FruitConsole project add two more class files, Exceptions.cs and StandardLog.cs.
 
-3. The Colour.cs will contain a list of enums for the colour of the fruit. Copy and paste the following code into your Colour.cs file undernath the class Colour. 
+3. The StandrdLog.cs will contain properties that you want to ensure you always log across all messages from your console app, actual fruit event messages and error messages. Your StandardLog class should look like this to capture the properties you want.
 
 ```c#
-        public enum Name
+ public class StandardLog
+    {
+        public enum LogCode
         {
-            Yellow = 0,
-            Red = 1,
-            Green = 2,
-            Orange = 3,
-            Purple = 4
+            Failure = 0,
+            Success = 1
         }
+
+        public string userName { get; private set; }
+
+        public DateTime dtUtc { get; private set; }
+
+        public DateTime dt { get; private set; }
+
+        public string hostName { get; private set; }
+
+        public string localIP { get; private set; }
+
+        public LogCode logCode { get; private set; }
+
+        public StandardLog(LogCode logCode)
+        {
+          this.userName = Environment.UserName;
+          this.dtUtc = DateTime.UtcNow;
+          this.dt = DateTime.Now;
+          this.hostName = Dns.GetHostName();
+          this.localIP = Dns.GetHostEntry(hostName).AddressList.GetValue(0).ToString();
+          this.logCode = logCode;
+        }
+    }
 ```
 
-4. The Fruit.cs will contain the properties of the fruit, a method which generates the properties of the fruit based on the colour provided and  a constructor which creates the fruit using this method. Copy and paste the following code into your Fruit.cs file underneath the class Fruit. 
+4. The Exceptions.cs will contain a bespoke exception class type related to a colour. This will be called ColourException and behave accordingly when a ColourException is thrown. Your Exceptions.cs file should therefore look like the below, containing one class for ColourException.
 
 ```c#
-        public string colour { get; set; }
+    class ColourException : Exception
+    {
+        public string colour;
 
-        public string name { get; private set; }
+        public StandardLog standardLog { get; private set; }
 
-        public int price { get; private set; }
+        public ColourException(string message, string colour) : base(message)
+        {
+            this.colour = colour;
+            standardLog = new StandardLog(StandardLog.LogCode.Failure);
+        }
+    }
+``` 
+
+5. We also now want to add the StandardLog properties to our Fruit.cs. In the Fruit class we will have a StandardLog object and in the constructor we will initiate a StandardLog so that these properties are all captured. Your Fruit class file should now contain the extract StandardLog object and the amendment to the constructor as shown below. 
+
+```
+        
+public StandardLog standardLog { get; private set; }
 
         public Fruit(string colour)
 
         {
             this.colour = colour;
             GetFruitNameAndPrice();
+            standardLog = new StandardLog(StandardLog.LogCode.Success);
         }
-
-        public void GetFruitNameAndPrice ()
-        {
-          switch (colour)
-            {
-                case "Yellow":
-                    name = "Banana";
-                    price = 50;
-                    break;
-                case "Red":
-                    name = "Strawberry";
-                    price = 75;
-                    break;
-                case "Green":
-                    name = "Apple";
-                    price = 25;
-                    break;
-                case "Orange":
-                    name = "Orange";
-                    price = 35;
-                    break;
-                case "Purple":
-                    name = "Grape";
-                    price = 10;
-                    break;
-            }
-        }
-``` 
-
-5. In the Program.cs we will now create the fruit and output its properties to a console line in JSON format. In order to do this we first need to install the Newtonsoft.JSON package using the package manager. 
-   a. Go to Tools > Nuget Package Manager > Package Manager Console. 
-   b. Copy and paste this into the console - Install-Package Newtonsoft.Json - and press return. 
-   c. Wait for the console to return package installed succesfully. This will allow us to serialize the fruit object as JSON. 
-
-6. At the top of your Program.cs file, where you can see the using statements, add the following:
-
-```c#
-using Newtonsoft.Json;
 ```
 
-6. The Program.cs file will contain 2 methods, one to get a random waiting period and one to get a random colour name from our enums. The main method of the application will then perform a loop sending random colours, to receive random fruit messages in JSON format to the console, with a random wait period between each message. Copy and paste the following code into your Program.cs file underneath the class Program. 
+6. In the Program.cs file we now want to create a new method to generate random errors to simulate more real life data. Under the WaitRandom method add the following to create this.
 
-```c#
+```
+        public static void ThrowRandomError(string colour)
+        {
+            Random random = new Random();
+            int randomNum = random.Next(0, 10);
+            if(randomNum == 1)
+            {
+                string message = "This is a random error for the colour " + colour + "!";
+                throw new ColourException(message, colour);
+            }
+        }
+```
+
+7. We now want to use this random error in our GetRandomColour method. Amend the method to look like the below.
+
+```
+        public static string GetRandomColour(bool errorEnabled)
+        {
+            string randomColour;
+            Array values = Enum.GetValues(typeof(Colour.Name));
+            Random random = new Random();
+            Colour.Name colour = (Colour.Name)values.GetValue(random.Next(values.Length));
+            randomColour = colour.ToString();
+            if (errorEnabled)
+                {
+                    ThrowRandomError(randomColour);
+                }
+            return randomColour;
+        }
+```
+
+8. Finally we also want to wrap the Main method in a try / catch block so we can catch exceptions gracefully. Notice that we have also set the "true" parameter of the GetRandomColour method, signifying we want random errors to be generated. 
+
+```
         static void Main(string[] args)
         {
             while (1 == 1)
                 {
-                string a = GetRandomColour();
-                Fruit fruit = new Fruit(a);
-                var message = JsonConvert.SerializeObject(fruit);                 
-                WaitRandom();
-                Console.WriteLine(message);
+                try
+                {
+                    string a = GetRandomColour(true);
+                    Fruit fruit = new Fruit(a);
+                    var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
+                    WaitRandom();
+                    Console.WriteLine(message);
+                }
+                catch (ColourException e)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    var error = JsonConvert.SerializeObject(e);
+                    Console.WriteLine(error);
+                    Console.ResetColor();
+                }
             }
-        }
-
-        public static string GetRandomColour()
-        {
-            Array values = Enum.GetValues(typeof(Colour.Name));
-            Random random = new Random();
-            Colour.Name randomColour = (Colour.Name)values.GetValue(random.Next(values.Length));
-            return randomColour.ToString() ;
-        }
-
-        public static void WaitRandom()
-        {
-            Random random = new Random();
-            int randomWait = random.Next(0, 1000);
-            System.Threading.Thread.Sleep(randomWait);
         }
 ```
 
-7. Run your console application and you should see Fruit messages continually being returned with colour, name and price as below. You have now completed this section. 
+8. Run your console application and you should see two new things:
+   * The StandardLog properties being returned as part of your message.
+   ![StandardLog](Images/StandardLog.PNG)
+   * Errors being randomly thrown in red which also contain the StandardLog properties.  
+   ![ErrorLog](Images/ErrorLog.PNG)
 
-![Fruit Messages To Console App](FruitConsole.PNG)
+
+

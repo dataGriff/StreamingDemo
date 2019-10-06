@@ -124,6 +124,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10_CreateStreamToAzureSQLDB
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{53B6B909-DDD2-4224-A844-5BBAEBA47650}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\02_AddLogAndErrorHandling\Images\ErrorLog.PNG = Instructions\02_AddLogAndErrorHandling\Images\ErrorLog.PNG
+		Instructions\02_AddLogAndErrorHandling\Images\StandardLog.PNG = Instructions\02_AddLogAndErrorHandling\Images\StandardLog.PNG
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{ABB2475D-8947-4CA4-810E-1FC47DBD5926}"
 	ProjectSection(SolutionItems) = preProject

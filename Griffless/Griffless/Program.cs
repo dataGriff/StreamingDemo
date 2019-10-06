@@ -14,7 +14,7 @@ namespace Griffless
 
         static void Main(string[] args)
         {
-            string connehub = "Endpoint=sb://fruitehubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6blCigv+9cN5/1yg2RDUr96WbjBmMoWYuF5sPijaUPo=";
+            //string connehub = "Endpoint=sb://fruitehubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=6blCigv+9cN5/1yg2RDUr96WbjBmMoWYuF5sPijaUPo=";
 
             while (1 == 1)
                 {
@@ -25,16 +25,19 @@ namespace Griffless
                     var message = JsonConvert.SerializeObject(fruit);                 //Remember Install-Package Newtonsoft.Json
                     WaitRandom();
                     Console.WriteLine(message);
-                    string ehubname = "fruitehub";
+                //    string ehubname = "fruitehub";
                   //  EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();  
                 }
                 catch (ColourException e)
                 {
+                    Console.BackgroundColor = ConsoleColor.Red;
                     var error = JsonConvert.SerializeObject(e);
                     Console.WriteLine(error);
-                    string ehubname = "errorehub";
-                 //   EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
+                    Console.ResetColor();
+                    //   string ehubname = "errorehub";
+                    //   EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
                 }
+                Console.ReadKey();
             }
         }
 
@@ -52,22 +55,22 @@ namespace Griffless
             return randomColour;
         }
 
-        public static void ThrowRandomError(string colour)
-        {
-            Random random = new Random();
-            int randomNum = random.Next(0, 10);
-            if(randomNum == 1)
-            {
-                string message = "This is a random error for the colour " + colour + "!";
-                throw new ColourException(message, colour);
-            }
-        }
-
         public static void WaitRandom()
         {
             Random random = new Random();
             int randomWait = random.Next(0, 1000);
             System.Threading.Thread.Sleep(randomWait);
+        }
+
+        public static void ThrowRandomError(string colour)
+        {
+            Random random = new Random();
+            int randomNum = random.Next(0, 10);
+            if (randomNum == 1)
+            {
+                string message = "This is a random error for the colour " + colour + "!";
+                throw new ColourException(message, colour);
+            }
         }
 
         private static async Task EventHubWrapper(string connectionString, string hubName, string message)
