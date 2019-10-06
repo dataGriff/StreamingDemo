@@ -12,19 +12,19 @@ You might want to create the data lake using the portal the first time you do it
 2. Create a new resource group called fruitdemo-rg.
     i. Click the green plus and search for resource group.
 
-![Fruit Resource Group](FruitResourceGroup.PNG)
+![Fruit Resource Group](Images/FruitResourceGroup.PNG)
 
    ii. Name it fruitdemo-rg and created it West Europe region. 
 
-![Fruit Resource Group Detail](FruitResourceGroupDetail.PNG)
+![Fruit Resource Group Detail](Images/FruitResourceGroupDetail.PNG)
 
 3. Create a new data lake called fruitdemodtlk.
   i. Click the green plus and search for data lake. 
 
-![Fruit Data Lake](FruitDataLake.PNG)
+![Fruit Data Lake](Images/FruitDataLake.PNG)
 
    ii. Name it fruitdemodtlk, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the West Europe region and choose pay as you go. 
-![Fruit Data Lake Detail](FruitDataLakeDetail.PNG)
+![Fruit Data Lake Detail](Images/FruitDataLakeDetail.PNG)
 
 4. Navigate to your fruitdemo-rg and you will now see your data lake resource. 
 
@@ -101,6 +101,6 @@ You might want to create the data lake using the portal the first time you do it
 5. Right-click the FruitARM project and select Deploy > New. 
   Choose the fruitdemo-rg resource group and ensure your correct template and parameters file are chosen for the data lake resource. 
 
-![Fruit Data Lake ARM Deploy](FruitDataLakeARMDeploy.PNG)
+![Fruit Data Lake ARM Deploy](Images/FruitDataLakeARMDeploy.PNG)
 
 6. Confirm after deployment, which you can monitor via the output window, that the data lake is in your resource group. 

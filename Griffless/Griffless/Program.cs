@@ -26,14 +26,14 @@ namespace Griffless
                     WaitRandom();
                     Console.WriteLine(message);
                     string ehubname = "fruitehub";
-                    EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();  
+                  //  EventHubWrapper(connehub, ehubname, message).GetAwaiter().GetResult();  
                 }
                 catch (ColourException e)
                 {
                     var error = JsonConvert.SerializeObject(e);
                     Console.WriteLine(error);
                     string ehubname = "errorehub";
-                    EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
+                 //   EventHubWrapper(connehub, ehubname, error).GetAwaiter().GetResult();
                 }
             }
         }

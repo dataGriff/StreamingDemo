@@ -23,15 +23,15 @@ FROM
     [fruitstream]
 ```
 
-![Fruit Stream Case Query](FruitStreamCaseQuery.PNG)
+![Fruit Stream Case Query](Images/FruitStreamCaseQuery.PNG)
 
 4. Start your job.
 
-![Fruit Stream Start](FruitStreamStart.PNG)
+![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
 5. Look in your data lake and see the new data for "FruitEatenByMonkeys". 
 
-![Data Lake Fruit Eaten By Monkeys](DataLakeFruitEatenByMonkeys.PNG)
+![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)
 
 ### Amend Query in Stream Analytics Project
 
@@ -51,14 +51,14 @@ FROM
     [fruitstream]
 ```
 
-![VS Stream Case Query](VSStreamCaseQuery.PNG)
+![VS Stream Case Query](Images/VSStreamCaseQuery.PNG)
 
 4. Publish your stream job to Azure.
 
 5. Start your job.
 
-![Fruit Stream Start](FruitStreamStart.PNG)
+![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
 6. Look in your data lake and see the new data for "FruitEatenByMonkeys". 
 
-![Data Lake Fruit Eaten By Monkeys](DataLakeFruitEatenByMonkeys.PNG)
+![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)

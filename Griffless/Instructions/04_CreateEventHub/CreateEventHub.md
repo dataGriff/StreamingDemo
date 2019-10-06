@@ -12,22 +12,22 @@ You might want to create the event hub using the portal the first time you do it
 2. Create a new eventhub namespace called fruitehubns.
   i. Click the green plus and search for event hub. 
 
-![Fruit Eventhub Namespace ](FruitEventhubNamespace.PNG)
+![Fruit Eventhub Namespace ](Images/FruitEventhubNamespace.PNG)
 
    ii. Name it fruitehubns, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the West Europe region and basic pricing tier. 
-![Fruit Eventhub Namespace Detail](FruitEventhubNamespaceDetail.PNG)
+![Fruit Eventhub Namespace Detail](Images/FruitEventhubNamespaceDetail.PNG)
 
 3. Navigate to your newly created eventhub namespace, click event hubs and add an event hub.
 
-![Fruit Add Eventhub](FruitAddEventhub.PNG)
+![Fruit Add Eventhub](Images/FruitAddEventhub.PNG)
 
 4. Name it fruitehub and leave the defaults. 
 
-![Fruit Add Eventhub Detail](FruitAddEventhubDetail.PNG)
+![Fruit Add Eventhub Detail](Images/FruitAddEventhubDetail.PNG)
 
 5. Go into your newly created eventhub and click shared access policies. Create a new one called fruitsas with Send permissions.
 
-![Fruit Add Eventhub SAS](FruitAddEventhubSAS.PNG)
+![Fruit Add Eventhub SAS](Images/FruitAddEventhubSAS.PNG)
 
 
 ### Create with ARM Template
@@ -144,7 +144,7 @@ You might want to create the event hub using the portal the first time you do it
 5. Right-click the FruitARM project and select Deploy > New. 
   Choose the fruitdemo-rg resource group and ensure your correct template and parameters file are chosen for the eventhub resource. 
 
-![Eventhub ARM Deploy](FruitEventHubARMDeploy.PNG)
+![Eventhub ARM Deploy](Images/FruitEventHubARMDeploy.PNG)
 
 6. Confirm after deployment, which you can monitor via the output window, that the eventhub resources are in your resource group. 
 * Eventhub namspace

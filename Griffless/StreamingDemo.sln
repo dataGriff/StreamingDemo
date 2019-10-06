@@ -1,22 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitConsole", "Griffless\FruitConsole.csproj", "{0C20BAF4-C112-4C2C-9EF1-CA0A102CBF6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instructions", "{AFA764FD-527B-4D59-87C1-8531E1C275E3}"
-	ProjectSection(SolutionItems) = preProject
-		01_CreateConsoleApp.md = 01_CreateConsoleApp.md
-		02_CreateDataLake.md = 02_CreateDataLake.md
-		03_CreateEventHub.md = 03_CreateEventHub.md
-		04_AddEventhubToApp.md = 04_AddEventhubToApp.md
-		05_CreateStreamToLake.md = 05_CreateStreamToLake.md
-		06_StreamQueryCaseStatement.md = 06_StreamQueryCaseStatement.md
-		07_CreateStreamToPowerBI.md = 07_CreateStreamToPowerBI.md
-		08_CreateAzureSQLDB.md = 08_CreateAzureSQLDB.md
-		09_CreateStreamToAzureSQLDB.md = 09_CreateStreamToAzureSQLDB.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042AB4-4207-40C3-B886-2B5F4FAE6BD5}"
 	ProjectSection(SolutionItems) = preProject
@@ -79,6 +68,139 @@ Project("{E6C563F2-BDC2-4A24-ACBF-01715157DCBB}") = "FruitStream", "FruitStream\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FruitDB", "FruitDB\FruitDB.sqlproj", "{4BF7430A-676D-4F94-B3E6-4FDAF9A66147}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_CreateConsoleApp", "01_CreateConsoleApp", "{EDFAD3A0-C14D-4B78-A21A-904462811BA7}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\01_CreateConsoleApp\CreateConsoleApp.md = Instructions\01_CreateConsoleApp\CreateConsoleApp.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{1127FDB8-0DCA-418E-B872-32A1AF243C68}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\01_CreateConsoleApp\Images\FruitConsole.PNG = Instructions\01_CreateConsoleApp\Images\FruitConsole.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_AddLogAndErrorHandling", "02_AddLogAndErrorHandling", "{0C7069CC-8A49-40F7-A920-2297C6D5E313}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\02_AddLogAndErrorHandling\AddLogAndErrorHandling.md = Instructions\02_AddLogAndErrorHandling\AddLogAndErrorHandling.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_CreateDataLake", "03_CreateDataLake", "{0C45696A-B7A2-47E9-8507-C3555139ADD7}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\03_CreateDataLake\CreateDataLake.md = Instructions\03_CreateDataLake\CreateDataLake.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_CreateEventHub", "04_CreateEventHub", "{0C53716C-6FFE-4DA7-BE84-4E380FAE89EC}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\04_CreateEventHub\CreateEventHub.md = Instructions\04_CreateEventHub\CreateEventHub.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_AddEventHubToApp", "05_AddEventHubToApp", "{D5A144C7-F111-4D72-84F9-BE5FD088A1BA}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\05_AddEventHubToApp\AddEventhubToApp.md = Instructions\05_AddEventHubToApp\AddEventhubToApp.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_CreateStreamToLake", "06_CreateStreamToLake", "{30DE2555-FDD3-446C-8B01-1061EBC11FD7}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\06_CreateStreamToLake\CreateStreamToLake.md = Instructions\06_CreateStreamToLake\CreateStreamToLake.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_StreamQueryToCaseStatement", "07_StreamQueryToCaseStatement", "{6F9F9145-734E-4233-A26D-DE8E0B8B5580}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\07_StreamQueryCaseStatement\StreamQueryCaseStatement.md = Instructions\07_StreamQueryCaseStatement\StreamQueryCaseStatement.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_CreateStreamToPowerBI", "08_CreateStreamToPowerBI", "{5C9D9401-77C4-45EF-BB91-8D56D3E3891A}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\08_CreateStreamToPowerBI\CreateStreamToPowerBI.md = Instructions\08_CreateStreamToPowerBI\CreateStreamToPowerBI.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_CreateAzureSQLDB", "09_CreateAzureSQLDB", "{A3B878DE-4B10-4469-B4BD-15B223B4C05A}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\09_CreateAzureSQLDB\CreateAzureSQLDB.md = Instructions\09_CreateAzureSQLDB\CreateAzureSQLDB.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10_CreateStreamToAzureSQLDB", "10_CreateStreamToAzureSQLDB", "{BEC3E556-6FA3-46E5-828C-3CBD9CF8D3D8}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\10_CreateStreamToAzureSQLDB\CreateStreamToAzureSQLDB.md = Instructions\10_CreateStreamToAzureSQLDB\CreateStreamToAzureSQLDB.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{53B6B909-DDD2-4224-A844-5BBAEBA47650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{ABB2475D-8947-4CA4-810E-1FC47DBD5926}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\03_CreateDataLake\Images\FruitDataLake.PNG = Instructions\03_CreateDataLake\Images\FruitDataLake.PNG
+		Instructions\03_CreateDataLake\Images\FruitDataLakeARMDeploy.PNG = Instructions\03_CreateDataLake\Images\FruitDataLakeARMDeploy.PNG
+		Instructions\03_CreateDataLake\Images\FruitDataLakeDetail.PNG = Instructions\03_CreateDataLake\Images\FruitDataLakeDetail.PNG
+		Instructions\03_CreateDataLake\Images\FruitResourceGroup.PNG = Instructions\03_CreateDataLake\Images\FruitResourceGroup.PNG
+		Instructions\03_CreateDataLake\Images\FruitResourceGroupDetail.PNG = Instructions\03_CreateDataLake\Images\FruitResourceGroupDetail.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{5AF0993F-8BE6-476A-846A-506A3BCE04B3}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\04_CreateEventHub\Images\FruitAddEventhub.PNG = Instructions\04_CreateEventHub\Images\FruitAddEventhub.PNG
+		Instructions\04_CreateEventHub\Images\FruitAddEventhubDetail.PNG = Instructions\04_CreateEventHub\Images\FruitAddEventhubDetail.PNG
+		Instructions\04_CreateEventHub\Images\FruitAddEventhubSAS.PNG = Instructions\04_CreateEventHub\Images\FruitAddEventhubSAS.PNG
+		Instructions\04_CreateEventHub\Images\FruitEventHubARMDeploy.PNG = Instructions\04_CreateEventHub\Images\FruitEventHubARMDeploy.PNG
+		Instructions\04_CreateEventHub\Images\FruitEventhubNamespace.PNG = Instructions\04_CreateEventHub\Images\FruitEventhubNamespace.PNG
+		Instructions\04_CreateEventHub\Images\FruitEventhubNamespaceDetail.PNG = Instructions\04_CreateEventHub\Images\FruitEventhubNamespaceDetail.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{3347D399-18C6-4FC3-9E9C-D5C32BBCF3AD}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\05_AddEventHubToApp\Images\FruitEventhubMessages.PNG = Instructions\05_AddEventHubToApp\Images\FruitEventhubMessages.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{41E2530D-06B0-4C29-910F-A0EE220883EB}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\06_CreateStreamToLake\Images\FruitDataLakeDataExample.PNG = Instructions\06_CreateStreamToLake\Images\FruitDataLakeDataExample.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAddInput.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAddInput.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAddInputDetail.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAddInputDetail.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLake.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLake.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLakeDetail.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLakeDetail.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLakeTest.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAddOutputLakeTest.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAnalytic.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAnalytic.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamAnalyticDetail.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamAnalyticDetail.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamDataInLake.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamDataInLake.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamQueryLake.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamQueryLake.PNG
+		Instructions\06_CreateStreamToLake\Images\FruitStreamStart.PNG = Instructions\06_CreateStreamToLake\Images\FruitStreamStart.PNG
+		Instructions\06_CreateStreamToLake\Images\VSFruitStreamDeploy.PNG = Instructions\06_CreateStreamToLake\Images\VSFruitStreamDeploy.PNG
+		Instructions\06_CreateStreamToLake\Images\VSFruitStreamPub.PNG = Instructions\06_CreateStreamToLake\Images\VSFruitStreamPub.PNG
+		Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamInput.PNG = Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamInput.PNG
+		Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamOutputLake.PNG = Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamOutputLake.PNG
+		Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamProject.PNG = Instructions\06_CreateStreamToLake\Images\VSNewFruitStreamProject.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{72981841-AE4D-456D-A465-C24729648FB1}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\07_StreamQueryCaseStatement\Images\DataLakeFruitEatenByMonkeys.PNG = Instructions\07_StreamQueryCaseStatement\Images\DataLakeFruitEatenByMonkeys.PNG
+		Instructions\07_StreamQueryCaseStatement\Images\FruitStreamCaseQuery.PNG = Instructions\07_StreamQueryCaseStatement\Images\FruitStreamCaseQuery.PNG
+		Instructions\07_StreamQueryCaseStatement\Images\FruitStreamStart.PNG = Instructions\07_StreamQueryCaseStatement\Images\FruitStreamStart.PNG
+		Instructions\07_StreamQueryCaseStatement\Images\VSStreamCaseQuery.PNG = Instructions\07_StreamQueryCaseStatement\Images\VSStreamCaseQuery.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{91A9A9AA-1EAC-4F37-B658-EE04E1EFEFEC}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions\08_CreateStreamToPowerBI\Images\FruitStreamOutputReport.PNG = Instructions\08_CreateStreamToPowerBI\Images\FruitStreamOutputReport.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\FruitStreamOutputReportDetail.PNG = Instructions\08_CreateStreamToPowerBI\Images\FruitStreamOutputReportDetail.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\FruitStreamQueryReport.PNG = Instructions\08_CreateStreamToPowerBI\Images\FruitStreamQueryReport.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\FruitStreamStart.PNG = Instructions\08_CreateStreamToPowerBI\Images\FruitStreamStart.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIAddTileRealTimeData.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIAddTileRealTimeData.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIBarChart.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIBarChart.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIBarChartTitle.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIBarChartTitle.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBICardFields.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBICardFields.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBICardTitle.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBICardTitle.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboard.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboard.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboardCreate.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboardCreate.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboardCreateName.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIDashboardCreateName.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIFruitDataset.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIFruitDataset.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIFruitDatasetSelect.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIFruitDatasetSelect.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBIHome.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBIHome.PNG
+		Instructions\08_CreateStreamToPowerBI\Images\PowerBITileExpand.PNG = Instructions\08_CreateStreamToPowerBI\Images\PowerBITileExpand.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{032A1163-83A8-4235-A989-0F4DC7A4F06A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{8F23C0CA-8498-483D-9138-949809C6BCAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +231,26 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{92042AB4-4207-40C3-B886-2B5F4FAE6BD5} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{EDFAD3A0-C14D-4B78-A21A-904462811BA7} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{1127FDB8-0DCA-418E-B872-32A1AF243C68} = {EDFAD3A0-C14D-4B78-A21A-904462811BA7}
+		{0C7069CC-8A49-40F7-A920-2297C6D5E313} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{0C45696A-B7A2-47E9-8507-C3555139ADD7} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{0C53716C-6FFE-4DA7-BE84-4E380FAE89EC} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{D5A144C7-F111-4D72-84F9-BE5FD088A1BA} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{30DE2555-FDD3-446C-8B01-1061EBC11FD7} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{6F9F9145-734E-4233-A26D-DE8E0B8B5580} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{5C9D9401-77C4-45EF-BB91-8D56D3E3891A} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{A3B878DE-4B10-4469-B4BD-15B223B4C05A} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{BEC3E556-6FA3-46E5-828C-3CBD9CF8D3D8} = {AFA764FD-527B-4D59-87C1-8531E1C275E3}
+		{53B6B909-DDD2-4224-A844-5BBAEBA47650} = {0C7069CC-8A49-40F7-A920-2297C6D5E313}
+		{ABB2475D-8947-4CA4-810E-1FC47DBD5926} = {0C45696A-B7A2-47E9-8507-C3555139ADD7}
+		{5AF0993F-8BE6-476A-846A-506A3BCE04B3} = {0C53716C-6FFE-4DA7-BE84-4E380FAE89EC}
+		{3347D399-18C6-4FC3-9E9C-D5C32BBCF3AD} = {D5A144C7-F111-4D72-84F9-BE5FD088A1BA}
+		{41E2530D-06B0-4C29-910F-A0EE220883EB} = {30DE2555-FDD3-446C-8B01-1061EBC11FD7}
+		{72981841-AE4D-456D-A465-C24729648FB1} = {6F9F9145-734E-4233-A26D-DE8E0B8B5580}
+		{91A9A9AA-1EAC-4F37-B658-EE04E1EFEFEC} = {5C9D9401-77C4-45EF-BB91-8D56D3E3891A}
+		{032A1163-83A8-4235-A989-0F4DC7A4F06A} = {A3B878DE-4B10-4469-B4BD-15B223B4C05A}
+		{8F23C0CA-8498-483D-9138-949809C6BCAF} = {BEC3E556-6FA3-46E5-828C-3CBD9CF8D3D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C6D9CE4-B494-4A61-B428-B95173772619}

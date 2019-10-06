@@ -58,4 +58,4 @@ using Microsoft.Azure.EventHubs;
 
 8. While running, navigate to your eventhub and confirm that messages are being received. This may take 2-5 minutes for the Azure Portal graphs to display that it is receiving messages, so be patient :). 
 
-![Fruit Eventhub Messages](FruitEventhubMessages.PNG)
+![Fruit Eventhub Messages](Images/FruitEventhubMessages.PNG)
