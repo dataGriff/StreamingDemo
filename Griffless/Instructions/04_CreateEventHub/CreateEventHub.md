@@ -9,12 +9,12 @@ You might want to create the event hub using the portal the first time you do it
 
 1. Navigate to the [Azure Portal](https://portal.azure.com). 
 
-2. Create a new eventhub namespace called fruitehubns.
+2. Create a new eventhub namespace called {yourname}fruitehubns. Event hub namespaces are unique across Azure hence the need to prefix with your name.
   i. Click the green plus and search for event hub. 
 
 ![Fruit Eventhub Namespace ](Images/FruitEventhubNamespace.PNG)
 
-   ii. Name it fruitehubns, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the West Europe region and basic pricing tier. 
+   ii. Name it fruitehubns, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and basic pricing tier. **It is important to create in the same region as where the data is going to be held where possible to reduce egress charges.**
 ![Fruit Eventhub Namespace Detail](Images/FruitEventhubNamespaceDetail.PNG)
 
 3. Navigate to your newly created eventhub namespace, click event hubs and add an event hub.
@@ -44,7 +44,7 @@ You might want to create the event hub using the portal the first time you do it
   "contentVersion": "1.0.0.0",
   "parameters": {
     "eventhubnamespace": {
-      "value": "fruitehubns"
+      "value": "grifffruitehubns"
     },
     "eventhub": {
       "value": "fruitehub"
@@ -53,7 +53,7 @@ You might want to create the event hub using the portal the first time you do it
       "value": "fruitsas"
     },
     "eventhublocation": {
-      "value": "West Europe"
+      "value": "North Europe"
     }
   }
 }
@@ -68,7 +68,7 @@ You might want to create the event hub using the portal the first time you do it
   "parameters": {
 
     "eventhubnamespace": {
-      "defaultValue": "fruitehubns",
+      "defaultValue": "grifffruitehubns",
       "type": "string"
     },
     "eventhub": {
@@ -85,7 +85,7 @@ You might want to create the event hub using the portal the first time you do it
         "North Europe",
         "West Europe"
       ],
-      "defaultValue": "West Europe",
+      "defaultValue": "North Europe",
       "metadata": {
         "description": "The location in which the resources will be created."
       }
