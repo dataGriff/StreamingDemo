@@ -16,7 +16,7 @@ To demonstrate how easy it is to use stream analytics and its SQL-like language,
 ```sql
 SELECT
     *, CASE WHEN name = 'Banana' THEN 'Yes'
-    ELSE 'No' END AS FruitEatenByMonkeys
+    ELSE 'No' END AS [FruitEatenByMonkeys]
 INTO
     [fruitlake]
 FROM
@@ -44,7 +44,7 @@ FROM
 ```sql
 SELECT
     *, CASE WHEN name = 'Banana' THEN 'Yes'
-    ELSE 'No' END AS FruitEatenByMonkeys
+    ELSE 'No' END AS [FruitEatenByMonkeys]
 INTO
     [fruitlake]
 FROM

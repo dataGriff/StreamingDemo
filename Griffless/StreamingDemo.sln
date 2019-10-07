@@ -8,54 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instructions", "{AFA764FD-527B-4D59-87C1-8531E1C275E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{92042AB4-4207-40C3-B886-2B5F4FAE6BD5}"
-	ProjectSection(SolutionItems) = preProject
-		DataLakeFruitEatenByMonkeys.PNG = DataLakeFruitEatenByMonkeys.PNG
-		FruitAddEventhub.PNG = FruitAddEventhub.PNG
-		FruitAddEventhubDetail.PNG = FruitAddEventhubDetail.PNG
-		FruitAddEventhubSAS.PNG = FruitAddEventhubSAS.PNG
-		FruitConsole.PNG = FruitConsole.PNG
-		FruitDataLake.PNG = FruitDataLake.PNG
-		FruitDataLakeARMDeploy.PNG = FruitDataLakeARMDeploy.PNG
-		FruitDataLakeDataExample.PNG = FruitDataLakeDataExample.PNG
-		FruitDataLakeDetail.PNG = FruitDataLakeDetail.PNG
-		FruitEventHubARMDeploy.PNG = FruitEventHubARMDeploy.PNG
-		FruitEventhubMessages.PNG = FruitEventhubMessages.PNG
-		FruitEventhubNamespaceDetail.PNG = FruitEventhubNamespaceDetail.PNG
-		FruitResourceGroup.PNG = FruitResourceGroup.PNG
-		FruitResourceGroupDetail.PNG = FruitResourceGroupDetail.PNG
-		FruitStreamAddInput.PNG = FruitStreamAddInput.PNG
-		FruitStreamAddInputDetail.PNG = FruitStreamAddInputDetail.PNG
-		FruitStreamAddOutputLake.PNG = FruitStreamAddOutputLake.PNG
-		FruitStreamAddOutputLakeDetail.PNG = FruitStreamAddOutputLakeDetail.PNG
-		FruitStreamAddOutputLakeTest.PNG = FruitStreamAddOutputLakeTest.PNG
-		FruitStreamAnalytic.PNG = FruitStreamAnalytic.PNG
-		FruitStreamAnalyticDetail.PNG = FruitStreamAnalyticDetail.PNG
-		FruitStreamCaseQuery.PNG = FruitStreamCaseQuery.PNG
-		FruitStreamDataInLake.PNG = FruitStreamDataInLake.PNG
-		FruitStreamOutputReport.PNG = FruitStreamOutputReport.PNG
-		FruitStreamOutputReportDetail.PNG = FruitStreamOutputReportDetail.PNG
-		FruitStreamQueryLake.PNG = FruitStreamQueryLake.PNG
-		FruitStreamQueryReport.PNG = FruitStreamQueryReport.PNG
-		FruitStreamStart.PNG = FruitStreamStart.PNG
-		PowerBIAddTileRealTimeData.PNG = PowerBIAddTileRealTimeData.PNG
-		PowerBIBarChart.PNG = PowerBIBarChart.PNG
-		PowerBIBarChartTitle.PNG = PowerBIBarChartTitle.PNG
-		PowerBICardFields.PNG = PowerBICardFields.PNG
-		PowerBICardTitle.PNG = PowerBICardTitle.PNG
-		PowerBIDashboard.PNG = PowerBIDashboard.PNG
-		PowerBIDashboardCreate.PNG = PowerBIDashboardCreate.PNG
-		PowerBIDashboardCreateName.PNG = PowerBIDashboardCreateName.PNG
-		PowerBIFruitDataset.PNG = PowerBIFruitDataset.PNG
-		PowerBIFruitDatasetSelect.PNG = PowerBIFruitDatasetSelect.PNG
-		PowerBIHome.PNG = PowerBIHome.PNG
-		PowerBITileExpand.PNG = PowerBITileExpand.PNG
-		VSFruitStreamDeploy.PNG = VSFruitStreamDeploy.PNG
-		VSFruitStreamPub.PNG = VSFruitStreamPub.PNG
-		VSNewFruitStreamInput.PNG = VSNewFruitStreamInput.PNG
-		VSNewFruitStreamOutputLake.PNG = VSNewFruitStreamOutputLake.PNG
-		VSNewFruitStreamProject.PNG = VSNewFruitStreamProject.PNG
-		VSStreamCaseQuery.PNG = VSStreamCaseQuery.PNG
-	EndProjectSection
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "FruitARM", "FruitARM\FruitARM.deployproj", "{432227E7-E292-4279-A711-035213AC08EA}"
 EndProject

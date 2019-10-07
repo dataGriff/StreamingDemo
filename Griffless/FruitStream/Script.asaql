@@ -13,6 +13,7 @@ INTO
     [fruitreport]
 FROM
     [fruitstream]
+WHERE [standardLog].[LogCode] = 1 --successful fruit send
 GROUP BY 
     [name],
     SlidingWindow(second,10)
