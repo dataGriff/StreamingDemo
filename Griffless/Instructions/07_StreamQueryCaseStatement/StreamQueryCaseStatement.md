@@ -33,6 +33,8 @@ FROM
 
 ![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)
 
+[Back to ReadMe](../../ReadMe.md)
+
 ### Amend Query in Stream Analytics Project
 
 1. Go to your stream analytics job.
@@ -62,3 +64,5 @@ FROM
 6. Look in your data lake and see the new data for "FruitEatenByMonkeys". 
 
 ![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)
+
+[Back to ReadMe](../../ReadMe.md)

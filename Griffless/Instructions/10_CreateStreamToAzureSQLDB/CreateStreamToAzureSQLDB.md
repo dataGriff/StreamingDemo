@@ -44,3 +44,5 @@ FROM
 7. Select * from your Store.FruitTable and you should see your streamed in fruit messages. So we now have the lake, power bi and the SQL DB all being streamed in to at the same time. Huzzah! 
 
 ![Fruit SQL Output](Images/FruitSQLOutput.PNG)
+
+[Back to ReadMe](../../ReadMe.md)

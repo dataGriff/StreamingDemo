@@ -28,6 +28,8 @@ You might want to create the data lake using the portal the first time you do it
 
 4. Navigate to your fruitdemo-rg and you will now see your data lake resource. 
 
+[Back to ReadMe](../../ReadMe.md)
+
 ### Create with ARM Template
 
 1. In your Visual Studio solution with the console app project, create a new Azure Resource Group Project called "FruitARM". 
@@ -104,3 +106,5 @@ You might want to create the data lake using the portal the first time you do it
 ![Fruit Data Lake ARM Deploy](Images/FruitDataLakeARMDeploy.PNG)
 
 6. Confirm after deployment, which you can monitor via the output window, that the data lake is in your resource group. 
+
+[Back to ReadMe](../../ReadMe.md)

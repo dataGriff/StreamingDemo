@@ -135,5 +135,7 @@ public StandardLog standardLog { get; private set; }
    * Errors being randomly thrown in red which also contain the StandardLog properties.  
    ![ErrorLog](Images/ErrorLog.PNG)
 
+[Back to ReadMe](../../ReadMe.md)
+
 
 

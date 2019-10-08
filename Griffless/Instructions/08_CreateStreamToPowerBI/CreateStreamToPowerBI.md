@@ -84,3 +84,5 @@ GROUP BY
 19. You should end up with a moving real time dashboard as below.
 
 ![PowerBI Dashboard](Images/PowerBIDashboard.PNG)
+
+[Back to ReadMe](../../ReadMe.md)

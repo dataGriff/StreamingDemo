@@ -58,6 +58,8 @@ FROM
 
 ![Fruit Stream Data In Lake](Images/FruitStreamDataInLake.PNG)
 
+[Back to ReadMe](../../ReadMe.md)
+
 ## Create with Stream Analytics Project
 
 1. In Visual Studio, add a new Azure Stream Analytics Application project to your solution called FruitStream.
@@ -86,3 +88,5 @@ FROM
 7. After a few minutes you should start seeing activity in the messages and also data will go in to your data lake in the location you specified. 
 
 ![Fruit Stream Data In Lake](Images/FruitStreamDataInLake.PNG)
+
+[Back to ReadMe](../../ReadMe.md)
