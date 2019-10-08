@@ -3,7 +3,8 @@
 You might want to create the Azure SQL database using the portal the first time you do it just to a graphical understanding of how the resources are put together. After this initial deployment it is recommended you use an ARM template so you can repeat it more easily and consistently. 
 
 * [Create in Azure Portal](#Create-in-Azure-Portal)
-* [Create with ARM Template](###Create-with-ARM-Template)
+* [Create Azure SQL with ARM Template](###Create-with-ARM-Template)
+* [Create SQL Schema with DB Project](###Create-Schema-with-DB-Project)
 
 ### Create in Azure Portal
 
@@ -59,5 +60,49 @@ You might want to create the Azure SQL database using the portal the first time 
 
 12. It will take a few minutes to deploy, then navigate to your fruitdemo-rg and you will now see your azure sql resource. 
 
+13. Go to your server, select Firewalls and Virtual Networks, then click Add Client IP.
+
+![Add Client IP](Images/AddClientIP.PNG)
+
+14. Save the client IP you have added. This allows you to connect to the server from your machine. 
+
+![Save Client IP](Images/SaveClientIP.PNG)
+
+15. You also need to Allow Azure Services On in order for the streaming job to write to the database. **Disclaimer:** Opening this firewall rule means that the non-fixed IP address stream analytics can connect to the database, but it also means any other Azure resource could potentially connect to your database too. Please take other security measures if considering doing this in production.
+
+![Allow Azure Services](Images/AllowAzureServicesON.PNG)
+
+15. Now you need to create the database table you are going to stream into, you can do this in the portal. Navigate to the fruit database, click query editor.
+
+16. When prompted enter the password for the admin user your created. 
+
+![Login Query Editor](Images/LoginQueryEditor.PNG)
+
+17. Paste in the below SQL then click Run. 
+
+```sql
+CREATE SCHEMA [Store];
+GO 
+
+CREATE TABLE [Store].[Fruit]
+(
+	[FruitId]  INT IDENTITY NOT NULL CONSTRAINT [PK_Fruit] PRIMARY KEY CLUSTERED,
+	[FirstInserted] DATETIME2 NOT NULL CONSTRAINT [DF_Fruit_FirstInserted] DEFAULT SYSUTCDATETIME(),
+	[Name] VARCHAR(20) NOT NULL,
+	[Colour] VARCHAR(20) NOT NULL,
+	[Price] SMALLINT NOT NULL, 
+        [FruitUser] VARCHAR(128) NOT NULL, 
+        [FruitDate] DATETIME2 NOT NULL
+);
+GO 
+
+```
+
+![Create Table](Images/CreateTable.PNG)
+
+16. You now have the SQL infrastructure and schema to stream into. 
+
 ### Create with ARM Template
+
+### Create Schema with DB Project
 

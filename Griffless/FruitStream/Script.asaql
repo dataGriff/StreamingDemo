@@ -25,7 +25,7 @@ SELECT
     , [fruitstream].[StandardLog].[userName] AS [FruitUser]
     , [fruitstream].[StandardLog].[dt] AS [FruitDate]
 INTO 
-    [FruitDB]
+    [fruitsql]
 FROM
     [fruitstream]
 
