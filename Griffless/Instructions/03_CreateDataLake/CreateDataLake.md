@@ -28,7 +28,7 @@ You might want to create the data lake using the portal the first time you do it
 
 4. Navigate to your fruitdemo-rg and you will now see your data lake resource. 
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
 ### Create with ARM Template
 
@@ -107,4 +107,4 @@ You might want to create the data lake using the portal the first time you do it
 
 6. Confirm after deployment, which you can monitor via the output window, that the data lake is in your resource group. 
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)

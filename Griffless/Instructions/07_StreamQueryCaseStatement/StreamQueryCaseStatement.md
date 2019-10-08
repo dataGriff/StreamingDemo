@@ -33,7 +33,7 @@ FROM
 
 ![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
 ### Amend Query in Stream Analytics Project
 
@@ -65,4 +65,4 @@ FROM
 
 ![Data Lake Fruit Eaten By Monkeys](Images/DataLakeFruitEatenByMonkeys.PNG)
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)

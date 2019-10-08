@@ -58,7 +58,7 @@ FROM
 
 ![Fruit Stream Data In Lake](Images/FruitStreamDataInLake.PNG)
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
 ## Create with Stream Analytics Project
 
@@ -89,4 +89,4 @@ FROM
 
 ![Fruit Stream Data In Lake](Images/FruitStreamDataInLake.PNG)
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)

@@ -102,13 +102,13 @@ GO
 
 16. You now have the SQL infrastructure and schema to stream into. 
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
 ### Create with ARM Template
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
 ### Create Schema with DB Project
 
-[Back to ReadMe](../../ReadMe.md)
+[Back to ReadMe](../../../ReadMe.md)
 
