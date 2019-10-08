@@ -2,7 +2,17 @@
 
 1. In Visual Studio, create a new C# console application called "FruitConsole".
 
-2. Create two class files in your project, Colour.cs and Fruit.cs.
+2.Add a class to your project.
+
+
+![Add Class](Images/AddClass.PNG)
+
+
+3. Call it **Fruit.cs.**
+
+![Add Fruit Class](Images/AddFruitClass.PNG)
+
+4. Repeat the previous 2 steps for a Colour class called **Colour.cs.**
 
 3. The Colour.cs will contain a list of enums for the colour of the fruit. Copy and paste the following code into your Colour.cs file undernath the class Colour. 
 
@@ -62,9 +72,15 @@
 ``` 
 
 5. In the Program.cs we will now create the fruit and output its properties to a console line in JSON format. In order to do this we first need to install the Newtonsoft.JSON package using the package manager. 
-   a. Go to Tools > Nuget Package Manager > Package Manager Console. 
-   b. Copy and paste this into the console - Install-Package Newtonsoft.Json - and press return. 
-   c. Wait for the console to return package installed succesfully. This will allow us to serialize the fruit object as JSON. 
+   * Go to Tools > Nuget Package Manager > Package Manager Console. 
+   ![Package Manager Console](Images/ToolsPackageConsole.PNG)
+   * Copy and paste this into the console that appears below.
+```ps   
+ Install-Package Newtonsoft.Json  
+```
+ ![Install JSON](Images/InstallJSON.PNG)
+   * Press return.
+   * Wait for the console to return package installed succesfully. This installed package will allow us to serialize the fruit object as JSON. 
 
 6. At the top of your Program.cs file, where you can see the using statements, add the following:
 

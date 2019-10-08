@@ -15,6 +15,7 @@ You might want to create the event hub using the portal the first time you do it
 ![Fruit Eventhub Namespace ](Images/FruitEventhubNamespace.PNG)
 
    ii. Name it fruitehubns, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and basic pricing tier. **It is important to create in the same region as where the data is going to be held where possible to reduce egress charges.**
+
 ![Fruit Eventhub Namespace Detail](Images/FruitEventhubNamespaceDetail.PNG)
 
 3. Navigate to your newly created eventhub namespace, click event hubs and add an event hub.

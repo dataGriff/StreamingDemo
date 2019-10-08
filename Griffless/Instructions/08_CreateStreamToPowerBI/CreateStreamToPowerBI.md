@@ -31,8 +31,8 @@ GROUP BY
 5. If you don't have it running, start your FruitConsole app.
 
 6. Start your stream analytics job.
-![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
+![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
 7. Go to your [Power BI Account](https://app.powerbi.com/home).
 

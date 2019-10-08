@@ -13,6 +13,7 @@ You might want to create the event hub using the portal the first time you do it
 ![Fruit Stream Analytic](Images/FruitStreamAnalytic.PNG)
 
    ii. Name it fruitstream, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and leave rest as defaults. 
+
 ![Fruit Stream Analytic Detail](Images/FruitStreamAnalyticDetail.PNG)
 
 2. Navigate to your fruitdemo-rg and you will now see your stream analytic resource. 
@@ -20,14 +21,17 @@ You might want to create the event hub using the portal the first time you do it
 3. Go into your stream analytic job. 
 
 i. Create an input from your eventhub
+
 ![Fruit Stream Analytic Add Input](Images/FruitStreamAddInput.PNG)
 
 ii.Set the input alias to be fruitstream, use the frtuiehub you created and ensure the format is set to JSON. Set the rest as below.. 
+
 ![Fruit Stream Analytic Add Input Detail](Images/FruitStreamAddInputDetail.PNG)
 
 4. Create an output...
 
 i. Add an output to Data Lake Storage Gen 1
+
 ![Fruit Stream Analytic Add Output Lake](Images/FruitStreamAddOutputLake.PNG)
 
 ii. Call the output fruitlake, ensure the path pattern is **RAW/{date}/{time}**, use the fruit lake you have created in Account Name, set the rest of the details as below and be sure to Authorise with your account at the bottom using "User Token". 
@@ -49,12 +53,13 @@ FROM
 
 ![Azure Test Query](Images/AzureTestQuery.PNG)
 
-6. Start your console app.
+7. Start your console app.
 
-7. Start your stream analytics job (may take a few minutes to start).
+8. Start your stream analytics job (may take a few minutes to start).
+
 ![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
-8. After a few minutes you should start seeing activity in the messages and also data will go in to your data lake in the location you specified. 
+9. After a few minutes you should start seeing activity in the messages and also data will go in to your data lake in the location you specified. 
 
 ![Fruit Stream Data In Lake](Images/FruitStreamDataInLake.PNG)
 
@@ -83,6 +88,7 @@ FROM
 5. Start your console app.
 
 6. Start your stream analytics job (may take a few minutes to start).
+
 ![Fruit Stream Start](Images/FruitStreamStart.PNG)
 
 7. After a few minutes you should start seeing activity in the messages and also data will go in to your data lake in the location you specified. 

@@ -2,10 +2,15 @@
 
 1. Open your fruit console application that you created. 
 
-2. In the Program.cs we will now create the fruit and output its properties to a console line in JSON format. In order to do this we first need to install the Newtonsoft.JSON package using the package manager. 
+2. We need to install the EventHub nuget package.
    a. Go to Tools > Nuget Package Manager > Package Manager Console. 
-   b. Copy and paste this into the console - Install-Package Microsoft.Azure.EventHubs - and press return. 
-   c. Wait for the console to return package installed succesfully. This will allow us to serialize the fruit object as JSON. 
+   b. Copy and paste this into the console 
+   
+   ```ps
+   Install-Package Microsoft.Azure.EventHubs 
+   ```
+   c. Press return.
+   d. Wait for the console to return package installed succesfully. This will allow us to serialize the fruit object as JSON. 
 
 3. At the top of your Program.cs file, where you can see the using statements, add the following:
 

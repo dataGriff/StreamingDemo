@@ -131,8 +131,11 @@ public StandardLog standardLog { get; private set; }
 
 8. Run your console application and you should see two new things:
    * The StandardLog properties being returned as part of your message.
+   
    ![StandardLog](Images/StandardLog.PNG)
+
    * Errors being randomly thrown in red which also contain the StandardLog properties.  
+
    ![ErrorLog](Images/ErrorLog.PNG)
 
 [Back to ReadMe](../../../ReadMe.md)

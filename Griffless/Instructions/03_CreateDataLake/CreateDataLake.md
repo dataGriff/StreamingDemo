@@ -24,6 +24,7 @@ You might want to create the data lake using the portal the first time you do it
 ![Fruit Data Lake](Images/FruitDataLake.PNG)
 
    ii. Name it {yourname}fruitdemodtlk, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and choose pay as you go. 
+
 ![Fruit Data Lake Detail](Images/FruitDataLakeDetail.PNG)
 
 4. Navigate to your fruitdemo-rg and you will now see your data lake resource. 
