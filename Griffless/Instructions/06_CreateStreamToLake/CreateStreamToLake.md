@@ -12,7 +12,7 @@ You might want to create the event hub using the portal the first time you do it
 
 ![Fruit Stream Analytic](Images/FruitStreamAnalytic.PNG)
 
-   ii. Name it **{yourname}**fruitstream, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and leave rest as defaults. 
+   ii. Name it **{yourname}fruitstream**, use your appropriate subscription, use the resource group fruitdemo-rg, create it in the North Europe region and leave rest as defaults. 
 
 ![Fruit Stream Analytic Detail](Images/FruitStreamAnalyticDetail.PNG)
 
