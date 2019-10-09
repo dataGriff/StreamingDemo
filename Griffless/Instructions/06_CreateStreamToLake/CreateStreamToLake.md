@@ -24,7 +24,7 @@ i. Create an input from your eventhub
 
 ![Fruit Stream Analytic Add Input](Images/FruitStreamAddInput.PNG)
 
-ii.Set the input alias to be fruitstream, use the frtuiehub you created and ensure the format is set to JSON. Set the rest as below.. 
+ii.Set the input alias to be fruitstream, use the fruitehub you created and ensure the format is set to JSON. Set the rest as below.. 
 
 ![Fruit Stream Analytic Add Input Detail](Images/FruitStreamAddInputDetail.PNG)
 
