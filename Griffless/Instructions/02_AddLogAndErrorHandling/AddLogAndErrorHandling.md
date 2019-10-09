@@ -31,8 +31,6 @@
           this.userName = Environment.UserName;
           this.dtUtc = DateTime.UtcNow;
           this.dt = DateTime.Now;
-          this.hostName = Dns.GetHostName();
-          this.localIP = Dns.GetHostEntry(hostName).AddressList.GetValue(0).ToString();
           this.logCode = logCode;
         }
     }
