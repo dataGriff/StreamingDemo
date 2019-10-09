@@ -26,7 +26,7 @@ using Microsoft.Azure.EventHubs;
         private static EventHubClient eventHubClient;
 ```
 
-5. After the RandomWait method you have already created, add the following code. 
+5. After the ThrowRandomError method you have already created, add the following code. 
 
 ```c#
         private static async Task EventHubWrapper(string connectionString, string hubName, string message)
